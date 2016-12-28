@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:crazymo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.crazymo.views.MainActivity">
+
+    <com.crazymo.views.widget.NavTopBar
+        android:id="@+id/nav_top_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        crazymo:bacgroud_color="@color/colorPrimary"
+    />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_crazymo_logo"/>
+
+</RelativeLayout>

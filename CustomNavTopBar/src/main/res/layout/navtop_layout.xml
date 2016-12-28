@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top_bg"
+    style="@style/nav_layout_style">
+
+    <ImageView
+        android:id="@+id/id_nav_left"
+        style="@style/nav_left_iv_style"
+        android:src="@drawable/select_topnav_back" />
+
+    <TextView
+        android:id="@+id/id_mid_nav"
+        style="@style/nav_font_style"
+        android:text="标题" />
+
+    <ImageView
+        android:id="@+id/id_nav_right"
+        style="@style/nav_right_iv_style"
+        android:src="@drawable/select_topnav_edit" />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 顶部导航栏的布局style<-->
+    <style name="nav_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/fifty_six_width_height</item>
+        <item name="android:paddingLeft">@dimen/sixteen_width_height</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:paddingRight">@dimen/sixteen_width_height</item>
+    </style>
+    <!-- 顶部导航栏字体的style<-->
+    <style name="nav_font_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/twenty_font</item>
+    </style>
+    <!-- 顶部导航栏左边图标的style<-->
+    <style name="nav_left_iv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <!-- 顶部导航栏右边边图标的style<-->
+    <style name="nav_right_iv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+</resources>

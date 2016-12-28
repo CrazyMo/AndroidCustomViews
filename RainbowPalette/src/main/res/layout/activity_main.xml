@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:crazymo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBcg">
+    <TextView
+        android:id="@+id/id_txt_palette"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义的调色板CrazyMo"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_led_paletle"
+        android:layout_below="@id/id_txt_palette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_choose_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@mipmap/bcg_pre_btn"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/tv_choose_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:background="@mipmap/bcg_next_btn"
+            android:clickable="true"/>
+
+        <com.crazymo.views.widget.RainbowPalette
+            crazymo:ic_indicator="@mipmap/src_indicator"
+            crazymo:center_circle_defcolor="#0511FB"
+            android:id="@+id/imv_led_palettle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/img_led_palette" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_led_switch"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_list_border"
+        android:layout_below="@+id/rl_led_paletle"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:text="  彩灯开关" />
+
+        <CheckBox
+            android:id="@+id/cb_contrl_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:checked="true"
+            android:background="@drawable/selector_color"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/rl_led_switch"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_list_border"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_set_alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="  亮度调节" />
+
+        <SeekBar
+            android:id="@+id/id_alpha_seek_bar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_set_alpha"
+            android:layout_gravity="center_vertical"
+            android:progress="255"
+            android:max="255"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

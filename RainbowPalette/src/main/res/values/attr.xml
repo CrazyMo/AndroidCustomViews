@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="rainbow_palette">
+        <attr name="palette_color" format="color"/>
+        <!-- 可滑动小球的颜色 -->
+        <attr name="indicator_color" format="color" />
+        <!--中间指示当前选中颜色值的圆-->
+        <attr name="center_circle_defcolor" format="color"/>
+        <!-- 外圈圆环的半径 -->
+        <attr name="out_circle_radius" format="dimension" />
+        <!-- 调色环的外圈圆环的半径 -->
+        <attr name="palette_radius" format="dimension" />
+        <!-- 中心圆环的半径 -->
+        <attr name="center_radius" format="dimension" />
+        <!-- 调色环的宽度 -->
+        <attr name="palette_width" format="dimension" />
+        <!-- 可滑动小球的半径 -->
+        <attr name="indicator_radius" format="dimension" />
+        <!--用其他图片来代替绘制的指示器的小圆-->
+        <attr name="ic_indicator" format="reference"/>
+    </declare-styleable>
+</resources>
