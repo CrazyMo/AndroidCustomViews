@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:crazymo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="crazy.com.customview.MainActivity">
+
+    <crazy.com.customview.widget.CheckedableItemView
+        android:id="@+id/single_checked"
+        android:gravity="center|left"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/shape_edit_found"
+        android:text="你的性别是？"
+        android:textSize="26sp"
+        crazymo:modeType="0"
+        crazymo:rightIcon="@mipmap/single"
+        crazymo:rightCheckedIcon="@mipmap/single_selected"/>
+
+    <crazy.com.customview.widget.CheckedableItemView
+        android:id="@+id/multi_checked"
+        android:gravity="center|left"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/shape_edit_found"
+        android:layout_below="@id/single_checked"
+        android:text="你喜欢的运动？"
+        android:textSize="26sp"
+        crazymo:modeType="1"
+        crazymo:rightIcon="@mipmap/multi"
+        crazymo:rightCheckedIcon="@mipmap/multi_selected"/>
+</RelativeLayout>
