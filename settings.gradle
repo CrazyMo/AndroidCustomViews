@@ -1,1 +1,1 @@
-include ':RainbowPalette', ':CustomNavTopBar', ':CheckedableItemView'
+include ':RainbowPalette', ':CustomNavTopBar', ':CheckedableItemView', ':EnhanceEditText'
