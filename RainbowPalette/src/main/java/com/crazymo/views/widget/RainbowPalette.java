@@ -12,7 +12,6 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.SweepGradient;
 import android.util.AttributeSet;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -89,16 +88,21 @@ public class RainbowPalette extends View {
      * 设置调色板的尺寸
      */
     private void setPaletteSize(){
-     /*   WindowManager manager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);//获取WM对象
-        int height = (int) (manager.getDefaultDisplay().getHeight() * 0.5f);//获取屏幕的高度*0.5
-        int width = (int) (manager.getDefaultDisplay().getWidth() * 0.7f);//获取屏幕宽度的0.7*/
-        WindowManager manager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);//获取WM对象
+/*        WindowManager manager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);//获取WM对象
         DisplayMetrics dm = new DisplayMetrics();
         manager.getDefaultDisplay().getMetrics(dm);
         int screenPxHeight=dm.heightPixels;//获取真实屏幕的高度以px为单位
         int sceenPxWidth=dm.widthPixels;
         this.height = screenPxHeight - 36;
         this.width = sceenPxWidth;
+        setMinimumHeight(height - 36);
+        setMinimumWidth(width);*/
+
+        WindowManager manager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);//获取WM对象
+        int height = (int) (manager.getDefaultDisplay().getHeight() * 0.5f);//获取屏幕的高度*0.5
+        int width = (int) (manager.getDefaultDisplay().getWidth() * 0.7f);//获取屏幕宽度的0.7
+        this.height = height - 36;
+        this.width = width;
         setMinimumHeight(height - 36);
         setMinimumWidth(width);
     }
