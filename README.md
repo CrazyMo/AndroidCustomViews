@@ -12,3 +12,6 @@ Some Android Custom Views Developed By CrazyMo_ on Android2.2.x
 # 四、EnhanceEditText
 ![image](https://github.com/CrazyMo/AndroidCustomViews/blob/master/EnhanceEditText/edt.gif)
 自定义文本输入框，带一键删除功能和非空抖动动画。
+# 五、ColorfulTextView
+自定义文本框，带默认渐变动画
+![image](https://github.com/CrazyMo/AndroidCustomViews/blob/master/ColorfulTextView/sample.gif)
