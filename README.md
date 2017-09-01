@@ -9,6 +9,6 @@ Some Android Custom Views Developed By CrazyMo_ on Android2.2.x
 # 三、CheckedableItemView
 ![image](https://github.com/CrazyMo/AndroidCustomViews/blob/master/CheckedableItemView/checkitem.png)
 模拟选择题中单选、多选项，更好地应用与RecycleView结合使用形成单选、多选列表，单选、多选逻辑得在Activity中控制。
-# 四、EnhanceEditTex
+# 四、EnhanceEditText
 ![image](https://github.com/CrazyMo/AndroidCustomViews/blob/master/EnhanceEditText/edt.gif)
 自定义文本输入框，带一键删除功能和非空抖动动画。
